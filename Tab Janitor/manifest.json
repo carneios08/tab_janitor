@@ -15,19 +15,5 @@
         ],
         "persistent": false
     },
-    /*"page_action": {
-        "default_icon": {
-            "16": "",
-            "32": "",
-            "48": "",
-            "128": ""
-        }
-    },
-    "icons": {
-        "16": "",
-        "32": "",
-        "48": "",
-        "128": ""
-    },*/
     "manifest_version": 2
 }
