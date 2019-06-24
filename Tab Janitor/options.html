@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tab Janitor Options</title>
+        <!-- External CSS -->
+        <link type="text/css" rel="stylesheet" href="/includes/bootstrap/css/bootstrap.min.css"/>
+        <!-- Internal CSS -->
+        <link type="text/css" rel="stylesheet" href="/styles/options.css"/>
+        <!-- External JS -->
+        <script type="text/javascript" src="/includes/jquery/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="/includes/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Internal JS -->
+        <script type="text/javascript" src="/src/options.js"></script>
+    </head>
+    <body>
+        <h1 id="headerOptions" name="headerOptions" class="text-center">Tab Janitor</h1>
+        <table id="tblOptions" name="tblOptions" class="table">
+            <tbody id="tbodyOptions" name="tbodyOptions">
+                <tr id="trMode" name="trMode">
+                    <td id="tdModeLabel" name="tdModeLabel">
+                        <label id="lblMode" name="lblMode">Mode:</label>
+                    </td>
+                    <td id="tdModeRadios" name="tdModeRadios">
+                        <input id="rdoBaseURL" name="rdoMode" class="radio" type="radio" checked>
+                        <label id="lblBaseURL" name="lblBaseURL">Base URL</label>
+                        <br>
+                        <input id="rdoEntireURL" name="rdoMode" class="radio" type="radio">
+                        <label id="lblEntireURL" name="lblEntireURL">Entire URL</label>
+                    </td>
+                </tr>
+                <tr id="trButtons" name="trButtons">
+                    <td id="tdReset" name="tdReset">
+                        <button id="btnReset" name="btnReset" class="btn btn-default" type="button">Reset</button>
+                    </td>
+                    <td id="tdSubmit" name="tdSubmit">
+                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" type="submit">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

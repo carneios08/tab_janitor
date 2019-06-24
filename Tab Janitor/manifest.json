@@ -1,0 +1,33 @@
+{
+    "name": "Tab Janitor",
+    "version": "1.0",
+    "description": "Removes tab clutter by collapsing an opening tab into a similar tab that is already opened.",
+    "permissions": [
+        "storage",
+        "declarativeContent",
+        "activeTab",
+        "tabs"
+    ],
+    "options_page": "options.html",
+    "background": {
+        "scripts": [
+            "/src/main.js"
+        ],
+        "persistent": false
+    },
+    /*"page_action": {
+        "default_icon": {
+            "16": "",
+            "32": "",
+            "48": "",
+            "128": ""
+        }
+    },
+    "icons": {
+        "16": "",
+        "32": "",
+        "48": "",
+        "128": ""
+    },*/
+    "manifest_version": 2
+}
