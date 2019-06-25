@@ -6,7 +6,8 @@
         "storage",
         "declarativeContent",
         "activeTab",
-        "tabs"
+        "tabs",
+        "webNavigation"
     ],
     "options_page": "options.html",
     "background": {

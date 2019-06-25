@@ -1,12 +1,10 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-        main();
-    });
+chrome.tabs.onUpdated.addListener(function(tabID, changeInfo, tab) {
+    if (tab.url && tab.url !== chrome.tabs.TAB_ID_NONE) {
+        main(tab);
+    }
 });
 
-function main() {
-    let currentTab = getCurrentTab();
-
+function main(currentTab) {
     if (currentTab) {
         let relatedTabs = getAllTabs(chrome.storage.sync.get(['entireURL'], setMode), currentTab);
         let relatedTabIDs = [];
@@ -28,12 +26,6 @@ function main() {
 
 function setMode(result) {
     return result.entireURL;
-}
-
-function getCurrentTab() {
-    return chrome.tabs.getCurrent(function(tab) {
-        return tab;
-    });
 }
 
 function getAllTabs(entireURL, currentTabIn) {
