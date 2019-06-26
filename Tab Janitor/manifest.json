@@ -1,11 +1,9 @@
 {
     "name": "Tab Janitor",
     "version": "1.0",
-    "description": "Removes tab clutter by collapsing an opening tab into a similar tab that is already opened.",
+    "description": "A tab manager that removes redundant URL navigation in Chrome.",
     "permissions": [
         "storage",
-        "declarativeContent",
-        "activeTab",
         "tabs",
         "webNavigation"
     ],
