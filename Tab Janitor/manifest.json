@@ -14,5 +14,19 @@
         ],
         "persistent": false
     },
+    "page_action": {
+        "default_icon": {
+            "16": "/styles/images/icon16.png",
+            "32": "/styles/images/icon32.png",
+            "48": "/styles/images/icon48.png",
+            "128": "/styles/images/icon128.png"
+        }
+    },
+    "icons": {
+        "16": "/styles/images/icon16.png",
+        "32": "/styles/images/icon32.png",
+        "48": "/styles/images/icon48.png",
+        "128": "/styles/images/icon128.png"
+    },
     "manifest_version": 2
 }
